@@ -98,7 +98,7 @@ np.random.shuffle(train_indices)
 # create dataloader
 train_sampler = data.sampler.SubsetRandomSampler(train_indices)
 validation_sampler = data.sampler.SubsetRandomSampler(valid_indices)
-batch_size = int(config.training.batch_size*torch.cuda.device_count())
+batch_size = int(config.training.batch_size)#*torch.cuda.device_count()
 train_loader = data.DataLoader(dataset,
                                batch_size=batch_size,
                                sampler=train_sampler,

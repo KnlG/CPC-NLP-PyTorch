@@ -1,9 +1,9 @@
 training:
-  logging_dir: '/user/vgaraujo/storage/CPC-NLP-PyTorch/logs'
+  logging_dir: 'C:/ds/DUL/logs'
   log_interval: 100
   epochs: 10
   batch_size: 64
-  no_cuda: False
+  no_cuda: True
   multigpu: False
   seed: 42
   resume_name: False
@@ -11,7 +11,7 @@ comet:
   api_key: '6oPfzhw55BucwZ4m8rV62ppyw'
   previous_experiment: False
 dataset:
-  books_path: '/user/vgaraujo/storage/Datasets/BookCorpusReady'
+  books_path: 'C:/ds/DUL/bookcorpus'
   vocab_size: 20000
   window: 9
   max_sen_length: 32
